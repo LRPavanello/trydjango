@@ -8,20 +8,28 @@ def home_view(request, *args, **kwargs): #*args, **kwargs
     #return HttpResponse("<h1>Hello World</h1>") # string of HTML code
     return render(request, "home.html", {})
 
-def contact_view(request, *args, **kwargs): 
+def contact_view(request, *args, **kwargs):
+    my_contextC = {
+        "my_text": " This is Contact View ",
+        "this_is_true": True,
+        "my_number": 2790,
+        "title":" Contact It ",
+        "text": " All of that content is in upper case ",
+        "my_html":"<h3>Python and Django WebFramework</h3>",
+    }
+
     return render(request, "contact.html", {})
     #return HttpResponse("<h1>Contact Page</h1>")
 
 def about_view(request, *args, **kwargs): 
     my_contextA = {
-        "my_text": " This is About us ",
+        "my_text": " This is About View ",
         "this_is_true": True,
         "my_number": 2790,
         "my_list": [123, 4235, 312, 5465467, "abc"],
         "title": " About That ",
-        "text": " All of that is in upper case ",
-        "my_html":"<h3>Python and Django WebFramework</h3>"
-
+        "text": " All of that content is in upper case ",
+        "my_html":"<h3>Python and Django WebFramework</h3>",
     }
     return render(request, "about.html", my_contextA)
     #return HttpResponse("<h1>About Page</h1>")
@@ -33,7 +41,7 @@ def social_view(request, *args, **kwargs):
         "my_number": 2790,
         "my_list": [123, 4235, 312, 5465467, "abc"],
         "title": " Contact Us",
-        "text": " All of that is in upper case ",
+        "text": " All of that content is in upper case ",
         "my_html":"<h3>Python and Django WebFramework</h3>"
     }
     return render(request, "social.html", my_contextS) 
