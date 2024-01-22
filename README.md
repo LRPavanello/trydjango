@@ -6,6 +6,20 @@ Welcome to the Python and Django WebFramework repository! This project aims to p
 
 🔗 GitHub Repository: [trydjango](https://github.com/luisrpavanelli/trydjango)
 
+## Usage Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/luisrpavanelli/trydjango
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd trydjango
+   ```
+
+3. Follow the contents sequentially to enhance your Django skills.
+
 ## Contents ⭐️
 
 ### 1. **Getting Started**
@@ -67,21 +81,6 @@ Welcome to the Python and Django WebFramework repository! This project aims to p
    - **Raw Update Class Based View** Updating views using raw class-based views.
    - **Raw Delete Class Based View** Deleting views using raw class-based views.
    - **Custom Mixin for Class Based Views** Developing a custom mixin for class-based views.
-
-
-## Usage Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/luisrpavanelli/trydjango
-   ```
-
-2. Navigate to the project folder:
-   ```bash
-   cd trydjango
-   ```
-
-3. Follow the contents sequentially to enhance your Django skills.
 
 ## Contribution Guidelines
 
