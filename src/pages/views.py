@@ -10,15 +10,15 @@ def home_view(request, *args, **kwargs): #*args, **kwargs
 
 def contact_view(request, *args, **kwargs):
     my_contextC = {
-        "my_text": " This is Contact View ",
-        "this_is_true": True,
-        "my_number": 2790,
-        "title":" Contact It ",
-        "text": " All of that content is in upper case ",
-        "my_html":"<h3>Python and Django WebFramework</h3>",
+        "my_textc": " This is Contact View ",
+        "this_is_truec": True,
+        "my_numberc": 2790,
+        "my_listc": [123],
+        "titlec":" Contact It ",
+        "textc": " All of that content is in upper case ",
+        "my_htmlc":"<h3>Python and Django WebFramework</h3>",
     }
-
-    return render(request, "contact.html", {})
+    return render(request, "contact.html", my_contextC)
     #return HttpResponse("<h1>Contact Page</h1>")
 
 def about_view(request, *args, **kwargs): 
