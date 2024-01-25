@@ -22,8 +22,9 @@ class ProductForm(forms.ModelForm):
             'title',
             'description',
             'price',
-            'comment'
+            
         ]
+
     def clean_title(self, *args, **kwargs):
         title = self.cleaned_data.get("title")
         if "LRP" in title:
