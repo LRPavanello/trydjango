@@ -3,7 +3,7 @@ from django import forms
 from .models import Product
 
 class ProductForm(forms.ModelForm):
-    title       = forms.CharField(label='', widget=forms.TextInput(attrs={"placeholder": "Your Title"}))
+    title       = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "Your Title"}))
     email       = forms.EmailField()
     comment     = forms.CharField()
     description = forms.CharField(

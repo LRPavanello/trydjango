@@ -3,6 +3,18 @@ from .models import Product
 from .forms import ProductForm, RawProductForm
 # Create your views here.
 
+#Initial Values for Forms
+#def render_initial_data(request):
+#   initial_data = { 
+#        'title': "My this awasome title"
+#   }
+#   obj = Product.objects.get(id=1)
+#   form = ProductForm(request.POST or None, initial=initial_data, instance=obj)
+#   context = {
+#       'form': form
+#   }
+#   return render(request, "products/product_create.html", context)
+
 #Widget Form
 #def product_create_view(request):
 #    my_form = RawProductForm()
